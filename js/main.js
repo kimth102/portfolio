@@ -31,3 +31,15 @@ document.addEventListener("scroll", () => {
     arrowUp.classList.add("arrow-up--hidden");
   }
 });
+
+// 메뉴 버튼 클릭시 메뉴 영역 토글
+const navbarMenu = document.querySelector(".header__menu");
+const navbarToggle = document.querySelector(".header__toggle");
+navbarToggle.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
+// 메뉴 클릭 시 메뉴 영역 닫기
+navbarMenu.addEventListener("click", () => {
+  navbarMenu.classList.remove("open");
+});
