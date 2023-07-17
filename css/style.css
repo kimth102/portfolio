@@ -438,6 +438,10 @@ button:focus {
   box-shadow: 2px 2px 0px 0px var(--color-accent);
 }
 
+.arrow-up--hidden {
+  display: none;
+}
+
 /* footer */
 #contact {
   background-color: var(--color-primary);

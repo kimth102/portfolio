@@ -12,11 +12,22 @@ document.addEventListener("scroll", () => {
 });
 
 // 페이지 아래로 스크롤 시 홈 화면 투명 적용
-const home = document.querySelector("#home__container");
+const home = document.querySelector(".home__container");
 const homeHeight = home.offsetHeight;
 
 document.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const opacity = 1 - scrollY / homeHeight;
   home.style.opacity = opacity;
+});
+
+// 페이지 아래로 스크롤 시 arrow up 표시
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  if (scrollY > window.innerHeight / 2) {
+    arrowUp.classList.remove("arrow-up--hidden");
+  } else {
+    arrowUp.classList.add("arrow-up--hidden");
+  }
 });
