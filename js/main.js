@@ -1,3 +1,5 @@
+"use strict";
+
 // 페이지 아래로 스크롤 시 header 다크 스타일 적용
 const header = document.querySelector(".header");
 const headerHeight = header.getBoundingClientRect().height;

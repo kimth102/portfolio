@@ -22,6 +22,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nanum Gothic", sans-serif;
   margin: 0;
@@ -318,11 +322,11 @@ button:focus {
   padding: 0.5rem 3rem;
   border-radius: 4px;
   border: 1px solid var(--color-accent);
-  cursor: point;
+  cursor: pointer;
   white-space: nowrap;
 }
 
-.category__selected {
+.category--selected {
   background-color: var(--color-accent);
   color: var(--color-primary);
 }
@@ -352,6 +356,12 @@ button:focus {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  transition: all 200ms ease-out;
+}
+
+.projects.animation-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
 }
 
 .project {

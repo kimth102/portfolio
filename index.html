@@ -199,32 +199,32 @@
           <p class="section__description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="al">
                 All
                 <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="fe">
                 Front-end
                 <span class="category__count">1</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="be">
                 Back-end
                 <span class="category__count">1</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mb">
                 Mobile
                 <span class="category__count">1</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="fe">
               <a href="#" target="_blank">
                 <img
                   class="project__img"
@@ -237,7 +237,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="be">
               <a href="#" target="_blank">
                 <img
                   class="project__img"
@@ -250,7 +250,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mb">
               <a href="#" target="_blank">
                 <img
                   class="project__img"
@@ -354,6 +354,8 @@
     </footer>
 
     <!-- Javascript -->
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/projects.js" defer></script>
+    <script type="module" src="js/active_menu.js" defer></script>
   </body>
 </html>
